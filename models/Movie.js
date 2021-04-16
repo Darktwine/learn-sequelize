@@ -5,6 +5,7 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Movie extends Model {}
 
+  // Sequelize adds for us id (pk), createdAt, updatedAt (two timestamps)
   Movie.init({
     title: {
       type: DataTypes.STRING,
